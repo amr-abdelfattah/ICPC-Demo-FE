@@ -24,7 +24,6 @@ jobs:
       - name: npm install and npm run build
         run: |
           npm install
-          
       - name: Push Build to Releases
         uses: ncipollo/release-action@v1
         with:
