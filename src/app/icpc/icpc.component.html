@@ -1,0 +1,14 @@
+<h1>What is MyICPC.</h1>
+<ul *ngIf="data">
+  <li *ngFor="let b of data">
+
+<!--    <p class="Sentence">Sentence: {{b.name}}</p>-->
+    <p class="name">Name: {{b.name}}</p>
+    <p class="House">State: {{b.state}}</p>
+<!--    <li *ngFor="let m of b.members">-->
+      <p *ngFor="let m of b.members" class="House">Member: {{m.name}}</p>
+<!--    </li>-->
+<!--    <p class="slug">Slug: {{b.character.house.slug}}</p>-->
+    <a href="{{b.website_url}}" class="site">site</a>
+  </li>
+</ul>
